@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://www.frontendmentor.io/profile/elle169"
+        >@elle169</a
+      >.
+    </div>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  
+  e.g. Jane Appleseed
+
+  
+  e.g. 1234 5678 9123 0000
+
+
+  MM
+  YY
+
+  
+  e.g. 123
+
+  
+
+  Completed state start -->
+
+    <!-- Thank you!
+  We've added your card details
+  Continue
+   -->
+
+    <div class="container  ">
+      <aside class="aside "></aside>
+
+      <div class="cards ">
+        <img src="./images/card-logo.svg" alt="" class="card-logo" />
+        <form action="" class="first-card ">
+          <div class="card-number" data-cardnumber>0000</div>
+          <div class="card-number" data-cardnumber>0000</div>
+          <div class="card-number" data-cardnumber>0000</div>
+          <div class="card-number" data-cardnumber>0000</div>
+        </form>
+        <div class="cardname " >
+          <p data-cardname class="namecard "  >FELICIA LEIRE</p>
+          <p data-carddate>
+            <span data-month>09</span>/<span data-year>00</span>
+          </p>
+        </div>
+        <form action="" class="second-card ">
+          <div type="number" class="card-cvc" data-cvc >000</div>
+        </form>
+      </div>
+
+      <main class="main-container ">
+        <form action="" class="cardholder-name " id="forms">
+          <span class="main-text " >Cardholder name</span>
+          
+          <input type="text" class="main-input " data-cardnameInput required 
+ " />
+        </form>
+
+        <form action="" id="forms" data-inputsborder>
+          <span class="main-text ">Card number</span>
+          <div class="main-input " id="div-input" data-cardnumberBorder >
+            <input
+              type="text"
+              class="card-input"
+              maxlength="4"
+              data-cardinput
+              required
+            
+            />
+            <input
+              type="text"
+              class="card-input"
+              maxlength="4"
+              data-cardinput
+              required
+            />
+            <input
+              type="text"
+              class="card-input"
+              maxlength="4"
+              data-cardinput
+              required
+            />
+            <input
+              type="text"
+              class="card-input"
+              maxlength="4"
+              data-cardinput
+              required
+            />
+          </div>
+        </form>
+
+        <div class="data-container ">
+          <form action="" class="expdate" id="forms">
+            <span class="date-text">Exp. date (mm/yy)</span>
+            <input 
+              type="number"
+              maxlength="2"
+              max="99"
+              class="date-input first"
+              id="grey-input"
+              data-monthinput
+              required
+            />
+            <input
+              type="number"
+              maxlength="2"
+              max="99"
+              class="date-input second"
+              id="grey-input"
+              data-yearinput
+              required
+            />
+          </form>
+
+          <form action="" class="cvc" id="forms">
+            <span class="date-text">CVC</span>
+            <input type="number" class="cvc-input" id="grey-input" maxlength="3" data-cvcinput required />
+          </form>
+        </div>
+
+        <input type="submit" class="button-confirm" value="Confirm" data-submitbt>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
